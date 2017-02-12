@@ -1,9 +1,41 @@
-<ion-view view-title="引导页">
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide" style="background-color: #0A9DC7;">Slide 1</div>
-			<div class="swiper-slide" style="background-color: #E42112;">Slide 2</div>
-			<div class="swiper-slide" style="background-color: #886AEA;">Slide 3</div>
-		</div>
-	</div>
+<ion-view id="guidePage" view-title="引导页" hide-back-button="true" cache-view="false">
+  <div id="guideSlide" class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="item-logo" style="background-color: #D74B28">
+          <a href="#">
+            京东商城
+          </a>
+          <div class="animate guide-show">
+            <h2 class="animated bounceInDown">企业精神</h2>
+            <li class="animated bounceInLeft">爱岗敬业，为人师表</li>
+            <li class="animated bounceInRight">团结友善，勇于担当</li>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="item-logo" style="background-color: #02C1ED;">
+          <a href="#">
+            京东商城
+          </a>
+          <div id="tips-2" class="animate hidden">
+            <h2 class="animated bounceInDown">核心价值</h2>
+            <li class="animated bounceInLeft">务实，质量，创新。</li>
+            <li class="animated bounceInRight">分享，专注，责任。</li>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="item-logo" style="background-color: #FCD208;">
+          <a href="#">
+            京东商城
+          </a>
+          <div class="animate guide-show">
+            <button id='close' ng-click="onclose()" class="mui-btn mui-btn-warning mui-btn-outlined">立即体验</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 </ion-view>
